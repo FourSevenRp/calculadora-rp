@@ -99,6 +99,9 @@ button {
         <option value="Nex7">Nex7 (35%)</option>
         <option value="Tequila">Tequila (30%)</option>
         <option value="Hp ilegal">Hp ilegal (30%)</option>
+        <option value="TDB ACIMA">TDB (ACIMA DE 12KK 27%)</option>
+        <option value="TDB ABAIXO">TDB (ABAIXO DE 12KK 30%)</option>
+	<option value="Noxit">Noxit (30%)</option>
     </select>
 
     <button onclick="calcular()">Calcular</button>
@@ -120,6 +123,9 @@ function calcular() {
         "Nex7": 25,
         "Tequila": 20,
         "Hp ilegal": 20,
+        "TDB ABAIXO": 20,
+        "TDB ACIMA": 17,
+	"Noxit": 20,
     };
 
     let taxaEmpresa = firmas[firmaSelecionada];
