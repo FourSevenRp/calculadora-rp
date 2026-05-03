@@ -91,17 +91,23 @@ button {
     <input type="number" id="valor" placeholder="Valor">
 
     <select id="firma">
+		<option value="La Firma">La Firma (30%)</option>
+		<option value="Neverpure">Neverpure (35%)</option>
+		<option value="Umbrella">Umbrella (30%)</option>
         <option value="Nucentes">Nucentes (35%)</option>
-        <option value="Umbrella">Umbrella (30%)</option>
-        <option value="Neverpure">Neverpure (35%)</option>
-        <option value="La Firma">La Firma (30%)</option>
-        <option value="Nova Ordem">Nova Ordem (30%)</option>
         <option value="Nex7">Nex7 (35%)</option>
-        <option value="Tequila">Tequila (30%)</option>
         <option value="Hp ilegal">Hp ilegal (30%)</option>
+        <option value="Nova Ordem">Nova Ordem (30%)</option>
+        <option value="Tequila">Tequila (30%)</option>
         <option value="TDB ACIMA">TDB (ACIMA DE 12KK 27%)</option>
-        <option value="TDB ABAIXO">TDB (ABAIXO DE 12KK 30%)</option>
-	<option value="Noxit">Noxit (30%)</option>
+        <option value="TDB ABAIXO">TDB (ABAIXO DE 12KK 30%)</option>        
+        <option value="Hydra-Autotech">Hydra-Autotech (35%)</option>
+        <option value="Deadshit-fazendinha">Deadshit-fazendinha (30%)</option>
+		<option value="Noxit">Noxit (30%)</option>
+		<option value="CRX-IAN-ROSA">CRX-IAN-ROSA (30%)</option>
+		<option value="Black7">Black7 (30%)</option>
+		<option value="Vipers">Vipers (30%)</option>
+		<option value="BM- BONDE DAS MARAVILHAS">BM- BONDE DAS MARAVILHAS (35%)</option>		
     </select>
 
     <button onclick="calcular()">Calcular</button>
@@ -115,17 +121,23 @@ function calcular() {
     let firmaSelecionada = document.getElementById("firma").value;
 
     let firmas = {
+		"La Firma": 20,
+		"Neverpure": 25,
+		"Umbrella": 20,
         "Nucentes": 25,
-        "Umbrella": 20,
-        "Neverpure": 25,
-        "La Firma": 20,
-        "Nova Ordem": 20,
         "Nex7": 25,
-        "Tequila": 20,
         "Hp ilegal": 20,
+        "Nova Ordem": 20,
+        "Tequila": 20,
         "TDB ABAIXO": 20,
-        "TDB ACIMA": 17,
-	"Noxit": 20,
+        "TDB ACIMA": 17, 
+        "Hydra-Autotech": 25,
+        "Deadshit-fazendinha": 20,
+		"Noxit": 20,
+		"CRX-IAN-ROSA": 20,
+		"Black7": 20,
+		"Vipers": 20,
+		"BM- BONDE DAS MARAVILHAS": 25,		
     };
 
     let taxaEmpresa = firmas[firmaSelecionada];
